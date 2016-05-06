@@ -1,0 +1,31 @@
+{
+  "cars": [
+    {
+      "make": "Nissan",
+      "model": "Rogue",
+      "year": "2006",
+      "price": "8999",
+      "color": "FireBrick",
+      "purchased": false,
+      "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
+    },
+    {
+      "make": "Honda",
+      "model": "Element",
+      "year": "2003",
+      "price": "11900",
+      "color": "Black",
+      "purchased": false,
+      "description": "This Honda Element is spacious, and runs very well despite it's 200k miles. Likely because it's previous owner changed the oil regularly."
+    },
+    {
+      "make": "Ford",
+      "model": "Excursion",
+      "year": "2004",
+      "price": "5000",
+      "color": "DarkOliveGreen",
+      "purchased": false,
+      "description": "This behemoth is great if you have a ton of kids, or have a costco membership."
+    }
+  ]
+}
