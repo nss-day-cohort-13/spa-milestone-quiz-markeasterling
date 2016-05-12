@@ -2,7 +2,7 @@
   "cars": [
     {
       "make": "Nissan",
-      "model": "Rogue",
+      "model": "Rouge",
       "year": "2006",
       "price": "8999",
       "color": "FireBrick",

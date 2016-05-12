@@ -1,0 +1,8 @@
+body {
+	background-color: lightgrey;
+}
+
+.selected {
+	background-color: yellow;
+	border-width: 10px !important;
+}
