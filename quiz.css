@@ -1,8 +1,26 @@
+*{
+	box-sizing: border-box;
+}
+
 body {
 	background-color: lightgrey;
+}
+
+.navbar{
+	background-color: darkgrey;
+}
+
+#container {
+	width: 80%;
+}
+
+.card{
+	margin:10px;
+	width: 50%
 }
 
 .selected {
 	background-color: yellow;
 	border-width: 10px !important;
 }
+

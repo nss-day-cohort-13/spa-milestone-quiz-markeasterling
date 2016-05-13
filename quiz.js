@@ -1,0 +1,2 @@
+carLot.getCarLotInventory();
+//carLot.activateEvents();

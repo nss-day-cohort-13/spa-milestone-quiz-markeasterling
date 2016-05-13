@@ -1,52 +1,37 @@
 var carLot = (function(events) {
+	// all events are active when this function is invoked
+	events.activateEvents = function() {
+		console.log("events enabled");
 
+	// put necessary DOM elements into variables
+		var textInput = document.getElementById("textInput");
+		var purchaseButton = document.getElementById("purchaseButton");
+		var description = document.querySelectorAll(".description");
+		var container = document.getElementById("container");
+		var cardID;
+		var selectedDescription;
 
-activateEvents = function() {
-	var textInput = document.getElementById("textInput");
-	var purchaseButton = document.getElementById("purchaseButton");
-	var description = document.querySelectorAll(".description");
-	var cardID;
-	var selectedDescription;
-
-	changeSelectedDescription	= function() {
-			//cardID = event.target.parentNode.id;
-			var DescriptionToChange = description[cardID];
-
-			//console.log(description[event.target.parentNode.id].innerHTML)
-			//console.log("", cardID);
-			//console.log(DescriptionToChange);
-			//console.log("", `Description: ${textInput.value}`);
-			DescriptionToChange.innerHTML = `Description: ${textInput.value}`;
-
-			//textInput.addEventListener("keyup", function(){
-			//});
-	};
-
-	focusTextInput = function() {
-		var selectedCard = event.target.parentNode;
-		cardID = event.target.parentNode.id;
-		console.log("", cardID);
-		if (selectedCard.className === "card") {
-			textInput.focus();
-			textInput.value = "";
-			//cardID = event.target.parentNode.id;
-			//console.log(cardID);
-			//changeSelectedDescription();
-
-
-			//carLot.toggleBorder();
+	// funtion to edit description of selected card
+		changeSelectedDescription	= function() {
+				var DescriptionToChange = description[cardID];
+				DescriptionToChange.innerHTML = `Description: ${textInput.value}`;
 		};
 
+	// function to
+		focusTextInput = function() {
+			var selectedCard = event.target.parentNode;
+			cardID = event.target.parentNode.id;
+			if (selectedCard.className === "card") {
+				textInput.focus();
+				textInput.value = "";
+			};
+	};
 
+	container.addEventListener("click", focusTextInput);
+	container.addEventListener("click", carLot.toggleBorder);
+	textInput.addEventListener("keyup", changeSelectedDescription);
+	};
 
-
-};
-	console.log("events enabled")
-document.getElementById("container").addEventListener("click", focusTextInput);
-document.getElementById("container").addEventListener("click", carLot.toggleBorder);
-textInput.addEventListener("keyup", changeSelectedDescription);
-};
-
-return events;
+	return events;
 
 })(carLot || {});
