@@ -1,12 +1,13 @@
-var carLot = (function(carLot) {
+var carLot = (function(toggle) {
 
-carLot.toggleBorder = function() {
+//thickens border and adds a different color to clicked card, providing a
+//selected effect.
+toggle.toggleBorder = function() {
 	if (event.target.parentNode.className === "card" || "selected") {
 		event.target.parentNode.classList.toggle("selected");
-		//focusTextInput();
 	};
 };
 
-return carLot;
+return toggle;
 
 })(carLot || {});

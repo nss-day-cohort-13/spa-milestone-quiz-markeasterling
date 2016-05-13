@@ -5,7 +5,7 @@
       "model": "Rouge",
       "year": "2006",
       "price": "8999",
-      "color": "FireBrick",
+      "color": "red",
       "purchased": false,
       "description": "This is an immaculate 2006 Nissan Rogue with only 25000 miles on it. Leather seats, power everything."
     },
@@ -23,7 +23,7 @@
       "model": "Excursion",
       "year": "2004",
       "price": "5000",
-      "color": "DarkOliveGreen",
+      "color": "goldenrod",
       "purchased": false,
       "description": "This behemoth is great if you have a ton of kids, or have a costco membership."
     }

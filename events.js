@@ -17,16 +17,18 @@ var carLot = (function(events) {
 				DescriptionToChange.innerHTML = `Description: ${textInput.value}`;
 		};
 
-	// function to
+	// function to put edit selected card's description.
 		focusTextInput = function() {
 			var selectedCard = event.target.parentNode;
 			cardID = event.target.parentNode.id;
 			if (selectedCard.className === "card") {
+
 				textInput.focus();
 				textInput.value = "";
 			};
 	};
 
+// event listeners to call above functions
 	container.addEventListener("click", focusTextInput);
 	container.addEventListener("click", carLot.toggleBorder);
 	textInput.addEventListener("keyup", changeSelectedDescription);
