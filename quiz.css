@@ -1,0 +1,27 @@
+*{
+	box-sizing: border-box;
+}
+
+body {
+	background-color: lightgrey;
+}
+
+.navbar{
+	background-color: darkgrey;
+}
+
+#container {
+	width: 80%;
+}
+
+.card{
+	background-color: grey;
+	margin:10px;
+	padding: 5px;
+	border-radius: 4px;
+}
+
+.selected {
+	background-color: lightgrey;
+	border-width: 10px !important;
+}
